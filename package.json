@@ -1,0 +1,45 @@
+{
+  "name": "movie_picker",
+  "version": "0.0.2",
+  "description": "This API serves up a random movie to be used with a front-end.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --harmony ./dist/index",
+    "test": "mocha --package ./package.json -r ts-node/register --spec ./test/**/*.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@aws-sdk/types": "3.1.0",
+    "@types/chai": "4.2.14",
+    "@types/fast-json-patch": "^1.1.5",
+    "@types/koa": "2.11.6",
+    "@types/koa-bodyparser": "4.3.0",
+    "@types/koa-router": "7.4.1",
+    "@types/koa__cors": "^3.0.2",
+    "@types/mocha": "8.2.0",
+    "@types/uuid": "8.3.0",
+    "chai": "4.2.0",
+    "mocha": "8.2.1",
+    "ts-node": "9.1.1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.1.0",
+    "@aws-sdk/util-dynamodb": "3.1.0",
+    "@koa/cors": "^3.1.0",
+    "@koa/router": "10.0.0",
+    "dotenv": "8.2.0",
+    "fast-json-patch": "3.0.0-1",
+    "inversify": "5.0.5",
+    "koa": "2.13.0",
+    "koa-bodyparser": "4.3.0",
+    "nconf": "0.11.0",
+    "reflect-metadata": "0.1.13",
+    "ts-dotenv": "0.8.3",
+    "typescript": "4.1.3",
+    "underscore": "^1.12.0",
+    "uuid": "3.4.0"
+  },
+  "mocha": {}
+}
